@@ -1,0 +1,99 @@
+/* ROOT */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap');
+
+:root{
+    --main-green-color: rgba(4, 255, 70);
+    --main-red-color: rgba(255, 58, 32, 0.87);
+    --main-white-color: rgba(240, 240, 240);
+}
+
+/* RESET */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+}
+
+html{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Roboto';
+    color: var(--main-red-color);
+    background-color: #000;
+    background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+}
+
+
+.logo{
+    font-family: 'Roboto Condensed';
+    font-weight: bold;
+    font-size: 75px;
+    margin: 20px 0 0 50px;
+}
+
+.beginning-container, .new-word-container, .game-contaier{
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.btn {
+    width: 317px;
+    height: 114px;
+    font-size: 20px;
+    color: var(--main-white-color);
+    background-color: var(--main-red-color);
+    border-radius: 24px;
+}
+
+.btn-invert{
+    width: 280px;
+    height: 67px;
+    color: var(--main-red-color);
+    border: 1px groove var(--main-red-color);
+    border-radius: 24px;
+}
+
+.entry{
+    width: 700px;
+}
+
+.entry input{
+    width: 100%;
+    height: 30px;
+    font-size: 25px;
+    border: none;
+    background-color: #000;
+    background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+}
+
+.caveat{
+    margin:0 0 15px 15px;
+}
+
+.btn-container{
+    width: 700px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.btn-container input{
+    width: 332px;
+    height: 67px;
+}
+
+.hide{
+    display: none;
+}
