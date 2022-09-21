@@ -23,6 +23,7 @@
 
 html{
     box-sizing: border-box;
+    font-size: 16px;
     scroll-behavior: smooth;
 }
 
@@ -41,59 +42,90 @@ body{
     margin: 20px 0 0 50px;
 }
 
-.beginning-container, .new-word-container, .game-contaier{
-    height: 500px;
+.container{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    height: 450px;
+}
+
+.principal{
     align-items: center;
 }
 
-.btn {
-    width: 317px;
-    height: 114px;
-    font-size: 20px;
-    color: var(--main-white-color);
-    background-color: var(--main-red-color);
-    border-radius: 24px;
+.principal > .nuevo-juego{
+    margin-bottom: 4rem;
+    margin-top: 4rem;
 }
 
-.btn-invert{
-    width: 280px;
-    height: 67px;
-    color: var(--main-red-color);
-    border: 1px groove var(--main-red-color);
-    border-radius: 24px;
-}
-
-.entry{
-    width: 700px;
-}
-
-.entry input{
-    width: 100%;
-    height: 30px;
-    font-size: 25px;
-    border: none;
-    background-color: #000;
-    background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
-}
-
-.caveat{
-    margin:0 0 15px 15px;
-}
-
-.btn-container{
-    width: 700px;
+.ahorcado{
+    width: 100vw;
     display: flex;
     justify-content: space-around;
 }
 
-.btn-container input{
-    width: 332px;
-    height: 67px;
+
+
+.adivinado{
+    text-align: center;
+    font-size: 1.8rem;
+    color: var(--main-green-color);
+}
+
+.letra{
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.adivinada{
+    width: 4.5rem;
+    height: 5.4rem;
+    border-bottom: .3rem solid var(--main-green-color);
+    margin-left: 0.4rem;
+    line-height: 4.5rem;
+}
+
+.errado{
+    text-align: center;
+    margin-top: 1rem;
+    color: var(--main-red-color);
+    margin-left: 1rem;
+    font-size: 1.8rem;
+}
+
+.errada{
+    margin-left: 1rem;
+}
+
+
+[type=button]{
+    width: 15rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    background: inherit;
+    border: 1px solid var(--main-red-color);
+    color: var(--main-red-color);
+    cursor: pointer;
+}
+
+.btn-rojo{
+    background-color: var(--main-red-color);
+    color: var(--main-white-color);
+}
+
+.botones{
+    text-align: center;
+    margin-top: 3rem;
 }
 
 .hide{
     display: none;
+}
+
+.victoria{
+    color: var(--main-green-color);
+}
+
+.derrota{
+    color: var(--main-red-color); 
 }
